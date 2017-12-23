@@ -1,0 +1,7 @@
+{% extends 'src/base.html' %}
+
+{% block content %}
+<h2>{{post.title}}</h2>
+{{post.body|safe|linebreaks}}
+<h4>on {{post.date}}</h4>
+{% endblock %}
